@@ -1,12 +1,12 @@
 ---
 import { Picture } from 'astro:assets';
-import ProfilePicture from '../assets/profile.png';
+import ProfilePicture from '@assets/profile.webp';
 
 const profile = {
-    name: 'Dejan Vi.',
+    name: 'Jose Arce.',
     title: 'Full Stack Developer',
-    location: 'Munich, Germany',
-    description: 'Passionate web developer focused on creating clean, efficient, and scalable web applications with a modern tech stack. Specialized in Angular, TypeScript, and Supabase, delivering responsive and intuitive user interfaces. Even my name includes "dev".'
+    location: 'Florida, USA',
+    description: 'Results-driven Software Development Engineer with over 6 years of experience in designing and implementing robust software solutions. Proficient in a variety of programming languages and frameworks, with a strong focus on delivering high-quality code and optimizing performance. Adept at collaborating with cross-functional teams to achieve project goals and exceed client expectations.',
 };
 ---
 
@@ -17,8 +17,8 @@ const profile = {
         <Picture
             src={ProfilePicture}
             formats={['webp']}
-            width={96}
-            height={96}
+            width={364}
+            height={364}
             alt={'Profile picture ' + profile.name}
             title={profile.name}
             class="w-24 h-24 rounded-xl object-cover border-2 border-primary mx-auto sm:mx-0"
