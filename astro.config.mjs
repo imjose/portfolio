@@ -16,7 +16,7 @@ export default defineConfig({
         tailwind(),
         sitemap(),
         compress({
-            CSS: true,
+            CSS: false,
             SVG: false,
             Image: false,
             HTML: {
