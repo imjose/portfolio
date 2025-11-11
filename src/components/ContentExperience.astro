@@ -3,12 +3,12 @@ import ExperienceContent from '../content/experience.md';
 
 ---
 
-<div class="prose prose-base text-slate-100 max-w-none">
+<div class="experience-wrapper prose prose-base text-slate-100 max-w-none">
     <ExperienceContent />
 </div>
 
-<style>
-    .prose {
+<style is:global>
+    .experience-wrapper.prose {
         h1 {
             @apply text-dos-light bg-dos-background p-1 text-2xl font-bold;
         }
