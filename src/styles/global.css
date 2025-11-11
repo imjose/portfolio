@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Console';
-    src: url('/fonts/WebPlus_IBM_VGA_8x16.woff') format('woff');
+    src: url('/portfolio/fonts/WebPlus_IBM_VGA_8x16.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Recommended for better performance */
