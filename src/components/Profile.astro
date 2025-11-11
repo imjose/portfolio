@@ -1,12 +1,12 @@
 ---
 import { Picture } from 'astro:assets';
-import ProfilePicture from '../assets/profile.png';
+import ProfilePicture from '@assets/profile.webp';
 
 const profile = {
-    name: 'Dejan Vi.',
+    name: 'Jose Arce',
     title: 'Full Stack Developer',
-    location: 'Munich, Germany',
-    description: 'Passionate web developer focused on creating clean, efficient, and scalable web applications with a modern tech stack. Specialized in Angular, TypeScript, and Supabase, delivering responsive and intuitive user interfaces. Even my name includes "dev".'
+    location: 'Florida, USA',
+    description: 'Results-driven Software Development Engineer with over 6+ years of experience in designing and implementing robust software solutions. Proficient in a variety of programming languages and frameworks, with a strong focus on delivering high-quality code and optimizing performance. Adept at collaborating with cross-functional teams to achieve project goals and exceed client expectations.',
 };
 ---
 
@@ -17,24 +17,24 @@ const profile = {
         <Picture
             src={ProfilePicture}
             formats={['webp']}
-            width={96}
-            height={96}
+            width={364}
+            height={364}
             alt={'Profile picture ' + profile.name}
             title={profile.name}
             class="w-24 h-24 rounded-xl object-cover border-2 border-primary mx-auto sm:mx-0"
         />
 
-        <div>
+        <div class="text-dos-light">
 
-            <h1 class="text-2xl font-extrabold mb-1 inline-block relative text-text-primary">
-                {profile.name}
+            <h1 class="text-3xl mb-2 text-slate-100 inline-block relative">
+                <span class="bg-dos-background text-dos-light px-0.5 py-1.5">{profile.name.charAt(0)}</span>{profile.name.substring(1)}
             </h1>
 
-            <p class="text-sm mb-2 text-primary">
+            <p class="text-sm mb-1">
                 {profile.title}
             </p>
 
-            <p class="flex items-center justify-center sm:justify-start text-sm text-gray-400">
+            <p class="flex items-center justify-center sm:justify-start text-sm text-yellow">
                 <svg class="-mt-0.5 inline mr-2"fill=none height=14 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewBox="0 0 24 24"width=14 xmlns=http://www.w3.org/2000/svg><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx=12 cy=10 r=3></circle></svg>
                 {profile.location}
             </p>
@@ -43,7 +43,7 @@ const profile = {
 
     </div>
 
-    <p class="text-sm leading-relaxed mt-4 text-gray-400">
+    <p class="leading-normal mt-4 ">
         {profile.description}
     </p>
 
