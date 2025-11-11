@@ -1,0 +1,32 @@
+---
+import ExperienceContent from '../content/experience.md';
+
+---
+
+<div class="prose prose-base text-slate-100 max-w-none">
+    <ExperienceContent />
+</div>
+
+<style>
+    .prose {
+        h1 {
+            @apply text-dos-light bg-dos-background p-1 text-2xl font-bold;
+        }
+        h2 {
+            @apply text-dos-light text-xl font-bold;
+        }
+        h3 {
+            @apply text-lg font-bold;
+        }
+        ul {
+            @apply pl-6;
+
+            li {
+                @apply list-decimal;
+                strong {
+                    @apply text-dos-yellow;
+                }
+            }
+        }
+    }
+</style>
