@@ -13,7 +13,6 @@ import ContentExperience from '@components/ContentExperience.astro';
 
     <main class="flex flex-col md:flex-row w-full max-w-full md:max-w-7xl rounded-sm border-2 overflow-hidden shadow-2xl relative bg-dos-panel mb-12 md:mb-4">
 
-        <!-- Start: Left / upper card -->
         <div class="p-8 md:p-6 flex flex-col justify-between w-full md:w-2/5 border-b md:border-b-0 md:border-r-2">
 
             <Profile />
@@ -21,13 +20,12 @@ import ContentExperience from '@components/ContentExperience.astro';
             <Contact />
 
         </div>
-        <!-- End: Left / upper card -->
 
         <div class="w-full md:w-3/5 xl:w-4/5 p-0">
 
             <div class="min-h-full h-[90vh] flex flex-col overflow-y-scroll scrollbar-hide">
 
-                <!-- Use hidden radio buttons to control the tabs -->
+                <!-- radio buttons to control the tabs -->
                 <div class="tab-controls">
 
                     <input
@@ -53,7 +51,7 @@ import ContentExperience from '@components/ContentExperience.astro';
                         disabled
                     /> -->
 
-                    <!-- Start: Tab bar -->
+                    <!-- Tab bar -->
                     <div class="flex bg-dos-cyan sticky top-0 z-10">
 
                         <ContentLink
@@ -74,7 +72,7 @@ import ContentExperience from '@components/ContentExperience.astro';
                     </div>
                     <!-- End: Tab bar -->
 
-                    <!-- Start: Tab content -->
+                    <!-- Content -->
                     <div class="p-6 flex-grow overflow-y-auto bg-dos-panel">
 
                         <div id="content1" class="tab-content">
@@ -90,7 +88,7 @@ import ContentExperience from '@components/ContentExperience.astro';
                         </div> -->
 
                     </div>
-                    <!-- End: Tab content -->
+                    <!-- End: Content -->
 
                 </div>
 

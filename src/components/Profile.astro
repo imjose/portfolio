@@ -6,7 +6,11 @@ const profile = {
     name: 'Jose Arce',
     title: 'Full Stack Developer',
     location: 'Florida, USA',
-    description: 'Results-driven Software Development Engineer with over 6+ years of experience in designing and implementing robust software solutions. Proficient in a variety of programming languages and frameworks, with a strong focus on delivering high-quality code and optimizing performance. Adept at collaborating with cross-functional teams to achieve project goals and exceed client expectations.',
+    description: [
+        'Hi, Im Jose, a Software Development Engineer with over 6+ years of experience in designing and implementing robust software solutions.',
+        '- Architected and delivered production-grade financial systems, marketplace platforms, and reporting tools across React/Next.js, Angular, Java/Spring Boot, and Node.js.',
+        '- Led high-impact initiatives such as a self-hosted CMS migration that saved $40,000 annually, integrated third-party services (Plaid, Smarty, Google APIs) to strengthen platform reliability; built a framework-agnostic widget library by encompassing Web Components APIs to seamless partner integrations and expanding marketplace reach.',
+    ].join('<br/><br/>'),
 };
 ---
 
@@ -43,8 +47,6 @@ const profile = {
 
     </div>
 
-    <p class="leading-normal mt-4 ">
-        {profile.description}
-    </p>
+    <p class="leading-normal" set:html={profile.description}/>
 
 </div>
